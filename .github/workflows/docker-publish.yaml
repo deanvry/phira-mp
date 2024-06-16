@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
     paths:
       - phira-mp-server/Dockerfile
-  pull_request:wq
+  pull_request:
     branches: [ "main" ]
     paths:
       - phira-mp-server/Dockerfile
