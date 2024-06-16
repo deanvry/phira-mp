@@ -1,0 +1,11 @@
+services:
+  phira-mp:
+    restart: unless-stopped
+    build: phira-mp-server
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+    ports:
+      - 5000:5000/tcp
